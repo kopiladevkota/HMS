@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Hospital Management System</h1>
+    <div class="tabs">
+      <button class="tab-button" onclick="showTab('patients')">Patients</button>
+      <button class="tab-button" onclick="showTab('doctors')">Doctors</button>
+      <button class="tab-button" onclick="showTab('appointments')">Appointments</button>
+      <button class="tab-button" onclick="showTab('billing')">Billing</button>
+    </div>
+
+    <!-- Patients Section -->
+    <div id="patients" class="tab-content">
+      <h2>Patients</h2>
+      <div class="patient-input">
+        <input type="text" id="patientName" placeholder="Patient Name" />
+        <input type="text" id="patientAge" placeholder="Age" />
+        <input type="text" id="patientAddress" placeholder="Address" />
+        <button id="addPatientBtn">Add Patient</button>
+      </div>
+      <ul id="patientList"></ul>
+    </div>
+
+    <!-- Doctors Section -->
+    <div id="doctors" class="tab-content" style="display: none;">
+      <h2>Doctors</h2>
+      <div class="doctor-input">
+        <input type="text" id="doctorName" placeholder="Doctor Name" />
+        <input type="text" id="doctorSpecialty" placeholder="Specialty" />
+        <button id="addDoctorBtn">Add Doctor</button>
+      </div>
+      <ul id="doctorList"></ul>
+    </div>
+
+    <!-- Appointments Section -->
+    <div id="appointments" class="tab-content" style="display: none;">
+      <h2>Appointments</h2>
+      <!-- Add appointment scheduling functionality here -->
+    </div>
+
+    <!-- Billing Section -->
+    <div id="billing" class="tab-content" style="display: none;">
+      <h2>Billing</h2>
+      <!-- Add billing functionality here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
